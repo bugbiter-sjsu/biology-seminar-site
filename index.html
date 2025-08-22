@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SJSU Biology Seminar</title>
+    <title>Biology Department Seminar</title>
     <!-- Google Fonts: Inter for a clean, modern look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +19,9 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#0055A2', // A deep indigo
-                        secondary: '#E5A823', // A light green
-                        dark: '#939597', // A dark gray
+                        primary: '#0055A2', // New blue color for the header
+                        secondary: '#007acc', // Lighter blue for hover state
+                        dark: '#1F2937', // A dark gray
                         light: '#F3F4F6', // A light gray
                     },
                 }
@@ -41,7 +41,7 @@
     <header class="bg-white sticky top-0 z-50 shadow-md">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <!-- Department/Seminar Title -->
-            <a href="#" class="text-2xl font-bold text-primary hover:text-indigo-600 transition-colors duration-300">
+            <a href="#" class="text-2xl font-bold text-primary hover:text-secondary transition-colors duration-300">
                 SJSU Biology Seminar
             </a>
             <!-- Navigation Links -->
@@ -61,18 +61,16 @@
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#schedule" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-light">Schedule</a>
                 <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-light">About</a>
-                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-light">Contact</a>
             </div>
         </div>
     </header>
 
     <main>
         <!-- Hero Section - Main headline and intro -->
-        <section class="relative bg-white py-20 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
-            <div class="absolute inset-0 bg-secondary opacity-20 transform -skew-y-3 z-0"></div>
+        <section class="relative bg-[#0055A2] py-20 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
             <div class="relative z-10 max-w-4xl mx-auto">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-primary mb-4">
-                    Department of Biological Sciences
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#E5A823] mb-4">
+                    Department of Biological Sciences Seminar Series
                 </h1>
             </div>
         </section>
@@ -92,7 +90,7 @@
             <div class="text-center mb-12">
                 <h2 class="text-3xl sm:text-4xl font-bold text-dark mb-4">Seminar Schedule</h2>
                 <p class="text-lg text-gray-600">
-                    Seminars are held in ISB 130 at 1:30 PM.
+                    All seminars are in-person and held in ISB130 at 1:30 PM.
                 </p>
             </div>
             <div class="overflow-x-auto">
@@ -102,23 +100,99 @@
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Speaker</th>
                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Institution</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
                         <tr>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Oct 15, 2024</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Jane Doe</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">CRISPR-Cas9: New Horizons in Gene Editing</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Aug. 27</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Josh Smith</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">University of California, Santa Cruz</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">An unintended ecological experiment: lessons on resilience from a kelp forest ecosystem in transition</td>
                         </tr>
                         <tr class="bg-gray-50">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Oct 22, 2024</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. John Smith</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Ecology of Urban Ecosystems</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sept. 3</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Kacper Rogala</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Stanford University</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
                         </tr>
                         <tr>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Oct 29, 2024</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Maria Rodriguez</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Immunology and Viral Responses</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sept. 10</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Brian Souza</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Lawrence Livermore National Lab</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sept. 17</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Daniel Sorensen</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">SJSU Biology</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sept. 24</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Elisabeth Bik</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Harbers Bik LLC</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Errors and Misconduct in Biomedical Research</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Oct. 1</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Yuhan Bi</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Stanford University</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Oct. 8</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Eric Lynch or Cole Jan</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">San Francisco Bay Bird Observatory</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Oct. 15</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Merav Vonshak</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">BioBlitz</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Oct. 22</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Nick Silva</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">San Francisco State University</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Oct. 29</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Jennifer Dionne</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Stanford University</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Nov.5</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">NO SEMINAR</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Nov. 12</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Gabrielle Names</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">SJSU Biology</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Nov. 19</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Carlie Pietsch</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">SJSU Geology</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Nov. 26</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">NO SEMINAR</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Dec. 3</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Dr. Nathan Rank</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sonoma State University</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -129,7 +203,7 @@
     <!-- Footer Section -->
     <footer class="bg-dark text-white py-8 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto text-center">
-            <p class="text-sm">&copy; 2025 Fred Larabee </p>
+            <p class="text-sm">&copy; 2024 Biology Department. All Rights Reserved.</p>
         </div>
     </footer>
 
