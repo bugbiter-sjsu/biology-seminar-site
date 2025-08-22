@@ -28,6 +28,13 @@
             }
         }
     </script>
+    <script>
+        // Check for updates every 5 seconds
+        setInterval(() => {
+            // Force a reload of the current page, ignoring the cache
+            window.location.reload(true);
+        }, 5000); // 5000 milliseconds = 5 seconds
+    </script>
     <style>
         /* Apply smooth scrolling for internal links */
         html {
