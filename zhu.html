@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Profile - Dr. Josh Smith</title>
+    <!-- Google Fonts: Inter for a clean, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0055A2',
+                        secondary: '#007acc',
+                        dark: '#1F2937',
+                        light: '#F3F4F6',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-light font-sans text-dark antialiased leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary hover:text-secondary transition-colors duration-300">
+                SJSU Biology Seminar
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#schedule" class="text-dark hover:text-primary transition-colors duration-300 font-medium">Schedule</a>
+                <a href="#about" class="text-dark hover:text-primary transition-colors duration-300 font-medium">About</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-dark hover:text-primary focus:outline-none focus:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#schedule" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-light">Schedule</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-primary hover:bg-light">About</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <a href="index.html" class="inline-block mb-8 text-primary hover:text-secondary transition-colors duration-300">
+            &larr; Back to Schedule
+        </a>
+        <div class="bg-white rounded-lg shadow-xl p-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+                <!-- Speaker Image -->
+                <div class="flex-shrink-0 mb-6 md:mb-0">
+                    <img src="https://med.stanford.edu/services/api/cap/profiles/photocache.183018.jpg" alt="Speaker's photo" class="w-48 h-48 rounded-full object-cover shadow-lg">
+                </div>
+                <!-- Speaker Details -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-3xl font-bold text-dark mb-2">Dr. Yu Zhu</h1>
+                    <p class="text-lg text-gray-600 mb-1">Stanford University</p>
+                    <p class="text-xl font-semibold text-primary mb-4">"Vascular endothelium - a gatekeeper of tumor immunity"</p>
+                </div>
+            </div>
+            <!-- Abstract Section -->
+            <div class="mt-8">
+                <h2 class="text-2xl font-bold text-dark mb-4">Biography</h2>
+                <p class="text-gray-700">
+I did my undergrad at Reed College in Portland OR, PhD training at WashU in St. Louis with Dr. David DeNardo, and postdoctoral research with Dr. Eugene Butcher at Stanford. I am currently an instructor in the Department of Medicine at Stanford and will join the faculty of Moffitt Cancer Center in Tampa Florida this coming January.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm">&copy; 2025 Fred Larabee</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close the menu if a link is clicked
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
